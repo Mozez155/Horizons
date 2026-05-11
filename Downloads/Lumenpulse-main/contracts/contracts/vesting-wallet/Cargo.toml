@@ -1,0 +1,17 @@
+[package]
+name = "vesting-wallet"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+reentrancy-guard = { path = "../reentrancy-guard" }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+crowdfund_vault = { path = "../crowdfund_vault" }
