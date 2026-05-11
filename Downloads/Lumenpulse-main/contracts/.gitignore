@@ -1,9 +1,0 @@
-# Rust's output directory
-target
-
-# Local settings
-.soroban
-.stellar
-
-# Proptest regression/snapshot files
-**/test_snapshots/
